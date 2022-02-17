@@ -1,0 +1,17 @@
+Function Main
+    Declare Integer F1, F2, FN, N, X
+    
+    Output "Enter the number of terms:"
+    Input N
+    Assign F1 = 0
+    Assign F2 = 1
+    Assign X = 0
+    While X<N-1
+        Assign FN = F1 + F2
+        Assign F1 = F2
+        Assign F2 = FN
+        Assign X = X + 1
+    End
+    Output "The nth term is :"
+    Output FN
+End
